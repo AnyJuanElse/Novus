@@ -1,0 +1,526 @@
+@import url(../Css/menu_desplegable.css);
+/*
+    Fonts tags:
+   font-family: 'Raleway', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+header {
+    background: black;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo { 
+   /* border: 2px solid white;*/
+    border-radius: 2px;
+    width: 190px;
+    height: 65px;
+    overflow:hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.welcome { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+
+    width:100%;
+}
+
+.welcome h2 {
+    font-size: 20px;
+    font-weight: 100;
+}
+
+h1 {
+
+    position: relative;
+    margin-top: 5px;
+    margin-left:6px;
+    font-family: 'Ubuntu', sans-serif;
+    color: white;
+    padding: 4px;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 24px;
+    letter-spacing: 7px;
+}
+
+h2 {
+    letter-spacing: 2px;
+    font-weight: 600;
+    font-size: 22px;
+    color: black;
+    padding: 15px;
+    margin:15px;
+}
+
+/*Fade responsive*/
+#Fade_effect {
+    opacity: 1;
+    -webkit-transition: opacity 0.3s ease-in-out;
+    -moz-transition: opacity 0.3s ease-in-out;
+    -o-transition: opacity 0.3s ease-in-out;
+    transition: opacity 0.3s ease-in-out;
+}
+#Fade_effect.fade {
+    opacity: 0;
+}
+
+p {
+    font-family: 'Raleway', sans-serif;
+}
+
+span {
+    font-size: 20px;
+    font-weight: 900;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 1px;
+}
+
+nav {
+    width: 100%;
+    height:40px;
+
+    -webkit-box-shadow: -1px 3px 20px -9px #000000; 
+    box-shadow: -1px 3px 20px -9px #000000;
+}
+
+.nav_option {
+    padding: 5px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav_option div a { 
+    color: black;
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+}
+
+.nav_option div a:hover { 
+    text-decoration: underline;
+}
+
+
+.contenedor { 
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    width: 86%;
+}
+
+.banner {
+    margin-top: 100px;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.banner_sm img {
+    margin-top:90px;
+    width:100%;
+}
+
+.banner_md {
+    width:100%;
+    margin-top:90px;
+    margin-bottom: 20px;
+    text-align:center;
+    position: relative;
+}
+
+.banner_md img {
+    width:100%;
+
+    -webkit-box-shadow: -1px 3px 20px -9px #000000; 
+    box-shadow: -1px 3px 20px -9px #000000;
+}
+
+.contenedor_banner_img {
+    margin: 2px;
+    width: 350px;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+img {
+    height: 300px;
+    width: 360px;
+    position: relative;
+    transition: 1s;
+}
+
+.image_banner:hover {
+    transform: scale(1.1);
+}
+
+.foot_page { 
+    padding: 5px;
+}
+/*Banner sm*/
+.contenedor_banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border-radius:  15px;
+}
+
+.contenedor .icon {
+    overflow:hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.icon img {
+    margin-top:-30px;
+    width: 200px;
+    overflow: hidden;
+
+}
+
+.icon_sm{
+    width:200px;
+}
+/*indice*/
+.indice {
+    text-align: center;
+    margin: auto;
+}
+.indice img {
+    margin: 0px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    -webkit-box-shadow: -1px 3px 20px -9px #00000080; 
+    box-shadow: -1px 3px 20px -9px #00000080;
+}
+.indice img:hover {
+    transform: scale(1.1);
+}
+
+
+
+/*branding*/
+.branding {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    margin-top: -15px;
+    height: 100%;
+    text-align: center;
+}
+
+.brand_text{
+    width: 90%;
+    font-size: 16px;
+    color: black;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+}
+.brand_text_r{
+    margin: auto;
+    width:90%;
+    font-size: 16px;
+    color: black;
+    text-align: justify;
+    font-family: 'Raleway', sans-serif;
+}
+
+.icon {
+    display: flex;
+    align-items: center;
+}
+/*trending nautilus responsive, colors*/
+.line {
+    position: absolute;
+    padding: 0;
+    height: 2px;
+    border-radius: 2px;
+    width: 100%;
+    background: rgba(195, 195, 195, 0.513);
+}
+
+.title {
+    letter-spacing: 4px;
+    font-family: 'Ubuntu', sans-serif;
+    position: relative;
+    padding: 15px;
+    margin-top: 0px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+.producto_03 {
+    width: 80%;
+    margin:auto;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.producto_03 img {
+    position:relative;
+    border-radius: 5px;
+}
+
+h5 {
+    margin-bottom:-10px;
+}
+
+.description {
+    display: block;
+    margin-left: 20px;
+}
+
+.description p {
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+.colors {
+    margin: 20px;
+    margin-bottom: -10px;
+    display: flex;
+    justify-content: center;
+}
+.colors div{
+    margin:5px;
+    width:24px;
+    height: 24px;
+}
+.colors div:first-child {
+    background: #d6aeb5;
+    border-radius: 100%;
+    border: 2px solid black;
+}
+.colors div:nth-child(0n+2) {
+    background: #b99d73;
+    border-radius: 100%;
+    border: 2px solid black;
+}
+
+.colors div:nth-child(0n+3) {
+    background:#c09d2a;
+    border-radius: 100%;
+    border: 2px solid black;
+}
+.colors div:nth-child(0n+4) {
+    background: rgba(29, 29, 29, 0.89);
+    border-radius: 100%;
+    border: 2px solid black;
+}
+
+/*Productos*/
+
+.productos h2 {
+    text-align: center;
+    font-size: 24px;
+}
+
+/*concept*/
+
+.concept img {
+    height: 100%;
+    width: 100%;
+}
+.producto_05 {
+    margin-top: 6px;
+    margin-bottom: 6px;
+}
+.fan{
+    margin: auto;
+    padding: 5px;
+    text-align: center;
+    width: 100px;
+}
+
+/*Gallery*/
+.gallery {
+    display: flex;
+    justify-content: center;
+}
+.gallery img{
+    cursor: pointer;
+    margin-top: 10%;
+    border-radius: 10px;
+    padding: 5px;
+    width: 120px;
+    height: 80px;
+}
+.eye {
+    display: flex; 
+    justify-content: center;
+}
+.eye img {
+    width: 60px;
+}
+/*sport bags*/
+.bags_title h2 {
+    font-size: 26px;
+    text-align: center;
+}
+.general_description {
+    width: 85%;
+}
+
+.description_tulas{
+    display: block;
+    margin: 0px;
+}
+.producto_04 {
+    margin-top:5px;
+    border-radius: 8px;
+    width:100%;
+}
+
+.personalizable {
+    margin: auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 75%;
+    padding:8px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+.personalizable_2{
+    letter-spacing: 4px;
+    margin: auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 60%;
+    padding:8px;
+    border: 2px solid black;
+    border-radius: 2px;
+}
+.personalizable h3{
+    margin-top: 5px;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 5px;
+    font-size: 18px;
+    text-align: center;
+}
+.personalizable_2 h3 {
+    margin-top: 5px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    font-size: 22px;
+    text-align: center;
+}
+
+.content {
+    margin-left:10px;
+    overflow: hidden;
+}
+
+.general{
+    margin-bottom: 15px; 
+}
+/*tulas sm md lg*/
+.tulas {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.tulas img {
+    width: 33%;
+    padding: 5px;
+    margin: 2px;
+    border-radius: 5px;;
+}
+.detalles_tulas{
+    display: flex;
+    justify-content: space-between;
+
+   text-align: center;
+   padding: 10px;
+   margin-top: 20px;
+}
+
+.detalles_tulas div {
+    width: 30%;
+}
+/*coming_soon*/
+.coming_soon {
+    border-radius: 5px 5px 0px 0;
+    margin-top: 25px;
+    margin-bottom: 0;
+    background: rgba(107, 154, 243, 0.856);
+    text-align: center;
+    height: 40px;
+}
+.coming_soon p {
+    color: white;
+    font-size: 20px;
+    letter-spacing: 6px;
+    line-height: 20px;
+    margin-top:10px;
+}
+/*footer*/
+footer {
+    width: 100%;
+    height: 180px;
+    background: black;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.copyright {
+    width: 180px;
+    margin: 25px;
+    text-align: center;
+    overflow: hidden;
+
+    font-family: 'Raleway', sans-serif;
+}
+.copyright p, a {
+    color: white;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+.social_media {
+    width: 180px;
+}
+
+.social_media p {
+    text-align: center;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    margin: 5px;
+}
+.icons {
+    text-align: center;
+}
+.social_media i {
+    cursor: pointer;
+    display: inline;
+    font-size: 30px;
+    color: white;
+}
+

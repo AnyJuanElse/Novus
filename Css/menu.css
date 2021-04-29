@@ -1,0 +1,50 @@
+
+
+/*Animación manu burger*/
+.menu-btn.open .menu-btn_burger {
+    transform: translateX(-40px);
+    background: transparent;
+}
+
+.menu-btn.open .menu-btn_burger::before {
+    transform: rotate(45deg) translate(35px, -35px);
+}
+.menu-btn.open .menu-btn_burger::after {
+    transform: rotate(-45deg) translate(35px, 35px);
+}
+
+/*Menu desplegable*/
+.cont-menu{
+    background-color: #000000;
+    border-radius: 0 140px 140px 0;
+    width: 100%;
+    height: 280px;
+    position: absolute;
+    top: 210px;
+    left: -100%;
+    transition: all .5s ease;
+}
+
+.cont-menu ul {
+    padding: 30px;
+    list-style: none;
+}
+.cont-menu ul li a{
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 25px;
+    font-family: 'Ubuntu', sans-serif;
+    margin:30px;
+}
+.cont-menu ul li a:hover {
+    text-decoration: underline;
+}
+
+/*clases menu desplegable JS*/
+.active {
+    transform: translateX(75%);
+    transition: all .5s ease-in-out;
+}
+
